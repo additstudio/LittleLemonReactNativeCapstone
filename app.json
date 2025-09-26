@@ -27,7 +27,7 @@
       "edgeToEdgeEnabled": true
     },
     "web": {
-      "favicon": "./assets/LittleLemonLogoIcon.png"
+      "favicon": "./assets/LittleLemonIcon.png"
     },
     "plugins": [
       "expo-font",

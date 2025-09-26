@@ -29,9 +29,13 @@ const ProfilePhoto = ( {navigation}) => {
             const firstName = await AsyncStorage.getItem('userFirstName');
             const lastName = await AsyncStorage.getItem('userLastName');
 
-            if (firstName !== null || lastName !== null) {
+
+
+            if (firstName !== null && lastName !== null) {
             const userInitials = firstName.charAt(0) + lastName.charAt(0)
             setInitials(userInitials)
+            } else {
+            setInitials(firstName.charAt(0))
             }
         }
         catch(e) {

@@ -29,7 +29,7 @@ const OnboardingPage = ( {navigation}) => {
             console.error('Error in saving user details:', e)
         }
         finally {
-            navigation.navigate('Profile')
+            navigation.navigate('Home')
         }
     }
     }

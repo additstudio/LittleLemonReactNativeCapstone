@@ -90,7 +90,8 @@ return (
         <Stack.Screen name='Login' component={OnboardingPage} options= {{headerBackVisible: false}}/>
         <Stack.Screen name='Home' component={Home} options={ ( {navigation}) => ({headerBackVisible: false, 
         headerRight:() => <ProfilePhoto navigation={navigation}/> })}/>
-        <Stack.Screen name='Profile' component={Profile} options= {{headerBackVisible: false}}/>
+        <Stack.Screen name='Profile' component={Profile} options={ ( {navigation} ) => ({
+              headerLeft: () => <BackButton navigation={navigation}/>})}/>
         <Stack.Screen name='MenuItem' component={MenuItem} options={ ( {navigation} ) => ({
               headerLeft: () => <BackButton navigation={navigation}/>})}/>
         <Stack.Screen name='Cart' component={Cart} options={ ( {navigation} ) => ({
