@@ -43,7 +43,7 @@ const OrderHistory = ({navigation}) => {
             <Text style={styles.menuItemDes}>Order Date: {dateFormatter.format(orderTime)} </Text>
             <Text style={styles.menuItemDes}>Order Number: {orderNum} </Text>
             <Text style={styles.menuItemDes}>Total Order Amt: ${
-                orderDetails.reduce((accumulator, currentItem) => accumulator + currentItem.price * currentItem.qty, 0)
+                orderDetails.reduce((accumulator, currentItem) => accumulator + currentItem.price * currentItem.qty, 0).toFixed(2)
                 }</Text>
             <Text></Text>
         </View>
