@@ -1,29 +1,37 @@
 {
   "expo": {
-    "name": "LittleLemonCaptone2",
-    "slug": "LittleLemonCaptone2",
+    "name": "Little Lemon",
+    "slug": "Little Lemon",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/LittleLemonLogoIcon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/LittleLemonLogoBig.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Give Little Lemon permission to save photos",
+        "NSCameraUsageDescription": "Give Little Lemon permission to access your camera"
+      }
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/LittleLemonLogoBig.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/LittleLemonLogoIcon.png"
+    },
+    "plugins": [
+      "expo-font",
+      "expo-sqlite"
+    ]
   }
 }
